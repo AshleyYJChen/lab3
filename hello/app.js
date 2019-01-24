@@ -8,9 +8,10 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
 
+var app = express();
 var hello = require('./routes/hello');
 
-var app = express();
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
